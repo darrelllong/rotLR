@@ -1,5 +1,4 @@
-#ifndef _ROT_DL
-#define _ROT_DL
+#pragma once
 
 #include <stdint.h>
 
@@ -34,5 +33,3 @@ static inline uint64_t rotR_64(uint64_t v, uint32_t n) {
 static inline uint64_t rotL_64(uint64_t v, uint32_t n) {
   return (v << (n & 0x1f)) | (v >> (64 - (n & 0x3f)));
 }
-
-#endif
